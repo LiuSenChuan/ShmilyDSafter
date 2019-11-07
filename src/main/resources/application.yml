@@ -1,0 +1,36 @@
+#端口
+server:
+  port: 8888
+  servlet:
+    context-path: /ShmilyDS
+
+#MYSQL
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ShmilyDS?useUnicode=true&characterEncoding=utf8&serverTimezone=CTT
+    username: root
+    password: root
+
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+
+
+
+
+
+##日志
+
+logging:
+  pattern:
+    console: “%d - %msg%n”
+  path: D:/shmilyLog.log
+  file: D:/shmilyLog.log
+
+
+
+
